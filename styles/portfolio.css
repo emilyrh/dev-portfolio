@@ -1,0 +1,14 @@
+body {
+  background-color: pink;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+footer {
+  text-align: center;
+}
