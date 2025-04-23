@@ -1,14 +1,55 @@
+:root {
+  --branding-color: #eb5200;
+  --secondary-color: #ffecea;
+}
+
 body {
-  background-color: pink;
+  font-family: "Inter", sans-serif;
 }
 
 h1 {
-  font-family: "Inter", sans-serif;
-  text-align: center;
   font-size: 60px;
   font-weight: 900;
 }
 
+.hero {
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--branding-color);
+  padding: 335px 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.hero h2 {
+  font-size: 20px;
+}
+
 footer {
   text-align: center;
+  color: var(--branding-color);
+}
+
+.btn-branding {
+  border: 2px solid var(--branding-color);
+  border-radius: 30px;
+  box-shadow: var(--branding-color) 4px 4px 0 0;
+  color: var(--branding-color);
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-branding:hover {
+  background-color: var(--branding-color);
+  box-shadow: none;
+  color: var(--secondary-color);
 }
