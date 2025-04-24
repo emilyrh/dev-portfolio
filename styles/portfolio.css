@@ -17,6 +17,7 @@ h1 {
   background-color: var(--secondary-color);
   color: var(--branding-color);
   padding: 335px 20px;
+  height: 100%;
 }
 
 .hero p {
