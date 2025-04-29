@@ -10,6 +10,7 @@ body {
 h1 {
   font-size: 60px;
   font-weight: 900;
+  text-transform: uppercase;
 }
 
 .hero {
@@ -23,6 +24,7 @@ h1 {
 .hero p {
   font-size: 20px;
   font-weight: 800;
+  text-transform: uppercase;
 }
 
 .hero h2 {
@@ -53,4 +55,93 @@ footer {
   background-color: var(--branding-color);
   box-shadow: none;
   color: var(--secondary-color);
+}
+
+.btn-alt {
+  border: 2px solid #f1a8c6;
+  border-radius: 30px;
+  box-shadow: #f1a8c6 4px 4px 0 0;
+  color: #f1a8c6;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-alt:hover {
+  background-color: #f1a8c6;
+  box-shadow: none;
+  color: var(--branding-color);
+}
+
+.projects {
+  background-color: var(--branding-color);
+  padding: 60px 20px 120px;
+  height: 100%;
+}
+
+.projects h2 {
+  font-size: 40px;
+  color: #f1a8c6;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.img-fluid {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+img {
+  opacity: 60%;
+  transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+  opacity: 100%;
+}
+
+.project-description {
+  background-color: #f1a8c6;
+  padding: 20px;
+  border: 2px solid black;
+}
+.project-language {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: var(--branding-color);
+  color: #f1a8c6;
+  padding: 3px 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.project-title h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project-link {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--branding-color);
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.project-link:hover {
+  color: #eb5200;
+  text-decoration: none;
 }
