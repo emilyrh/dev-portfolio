@@ -19,6 +19,7 @@ h1 {
   background-color: var(--secondary-color);
   color: var(--branding-color);
   padding: 335px 20px;
+  width: auto;
   height: 100%;
 }
 
@@ -87,7 +88,7 @@ footer {
 }
 
 .projects h2 {
-  font-size: 40px;
+  font-size: 44px;
   color: #f1a8c6;
   text-align: center;
   font-weight: 900;
@@ -149,7 +150,7 @@ img {
 }
 .scalloped-box {
   --r: 25px; /* radius of circles */
-  height: 320px;
+  height: 400px;
   aspect-ratio: 1;
   padding: calc(1.5 * var(--r));
   background: var(--branding-color);
@@ -160,17 +161,25 @@ img {
 }
 
 .about-section {
+  padding-top: 60px;
   color: var(--secondary-color);
+  text-align: center;
+}
+
+.about-section .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
 }
 
 .about-section h2 {
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 56px;
   font-weight: 900;
 }
 
 .about-section p {
-  font-size: 20px;
+  font-size: 16px;
   color: #424790;
 }
 
@@ -212,9 +221,9 @@ img {
 }
 
 .contact-links {
-  margin: 0 auto;
-  width: 600px;
-  padding: 40px;
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .cv-link {
@@ -222,7 +231,7 @@ img {
 }
 
 .social-links {
-  display: block;
+  display: flex;
 }
 
 .creator-links {
@@ -233,4 +242,75 @@ img {
 
 .creator-links a {
   color: var(--branding-color);
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  .hero h2 {
+    font-size: 16px;
+  }
+
+  .project-container .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+
+  .project-description {
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .project-description p {
+    font-size: 13px;
+  }
+
+  .about-section {
+    text-align: center;
+  }
+
+  .about-section .row {
+    display: block;
+    justify-content: center;
+  }
+
+  .about-section h2 {
+    font-size: 44px;
+  }
+
+  .about-section p {
+    font-size: 14px;
+    padding: 0px 10px 0px;
+  }
+
+  .scalloped-box {
+    --r: 25px; /* radius of circles */
+    height: 280px;
+    aspect-ratio: 1;
+    padding: calc(1.5 * var(--r));
+    background: var(--branding-color);
+    mask: linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 2 * var(--r))
+        calc(100% - 2 * var(--r)),
+      radial-gradient(farthest-side, #000 97%, #0000) 0 0 / calc(2 * var(--r))
+        calc(2 * var(--r)) round;
+  }
+
+  .contact {
+    padding: 20px 20px;
+  }
+
+  .contact h2 {
+    font-size: 40px;
+  }
+
+  .email-link {
+    font-size: 18px;
+  }
+
+  .creator-links {
+    font-size: 14px;
+  }
 }
